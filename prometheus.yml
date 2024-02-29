@@ -21,4 +21,9 @@ scrape_configs:
   - job_name: 'railway_forum'
     metrics_path: "/api/metrics"
     static_configs:
-      - targets: ['station-server.railway.app:80']
+      - targets: ['help-station-server-staging.up.railway.app:80']
+
+  - job_name: 'railways_docs_metrics'
+    metrics_path: '/api/metrics'
+    static_configs:
+      - targets: ['docs-frontend-staging.up.railway.app:80']
