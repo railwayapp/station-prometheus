@@ -16,7 +16,7 @@ scrape_configs:
 
   - job_name: 'railway_docs_readability'
     static_configs:
-      - targets: ['railway-docs-exporter-production.up.railway.app:80']
+      - targets: ['docs-readability-exporter-production.up.railway.app:80']
 
   - job_name: 'postgres_metrics'
     static_configs:
